@@ -2,10 +2,12 @@
   background-color: black;
   color: white;
   margin: auto;
+  max-width: 2500px;
 }
 
 .white-content .home {
   background-color: rgba(149, 147, 147, 0.229);
+  background-color: white;
   color: black;
 }
 
@@ -14,4 +16,5 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
+  margin-top: 23rem;
 }

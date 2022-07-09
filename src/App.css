@@ -1,3 +1,12 @@
 .App {
   text-align: center;
+  background-image: url("./assets/rocket-black.jpg");
+
+  background-size: 5%;
+}
+
+.white-content .App {
+  background-color: black;
+}
+@media (max-width: 2700px) {
 }
