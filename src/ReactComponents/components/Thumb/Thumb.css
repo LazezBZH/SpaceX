@@ -1,0 +1,28 @@
+.thumb {
+  background-color: rgb(36, 36, 36);
+  border: solid 2px rgba(12, 12, 12, 0.934);
+  box-shadow: 1px 1px 12px #555;
+  border-radius: 5px;
+}
+
+.thumb img {
+  width: 30rem;
+  height: 20rem;
+  object-fit: contain;
+  margin-top: 1rem;
+}
+.thumb h2 {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+.thumb figcaption {
+  width: 30rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.white-content .thumb {
+  background-color: white;
+  border: solid 2px rgba(149, 147, 147, 0.552);
+}

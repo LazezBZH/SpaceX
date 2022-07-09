@@ -1,0 +1,25 @@
+header {
+  width: 90%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+h1 {
+  font-size: 6rem;
+  padding: 1rem 3rem;
+  color: white;
+  border: white solid 2rem;
+  border-image: linear-gradient(white, rgba(255, 255, 255, 0.1)) 50;
+  box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
+  -webkit-box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
+  -moz-box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
+}
+.white-content h1 {
+  color: black;
+  border: white solid 2rem;
+  border-image: linear-gradient(rgba(0, 0, 0, 0.1), black) 50;
+  box-shadow: 17px 16px 18px 0px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 17px 16px 18px 0px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 17px 16px 18px 0px rgba(0, 0, 0, 0.76);
+}
