@@ -1,0 +1,29 @@
+.modal {
+  width: 70%;
+  height: 60vh;
+  margin: auto;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(36, 36, 36);
+  padding-bottom: 20rem;
+  z-index: 99;
+}
+.white-content .modal {
+  background-color: white;
+}
+.video-youtube {
+  position: absolute;
+  top: 17%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.modal button {
+  font-size: 3rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}

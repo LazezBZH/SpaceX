@@ -3,7 +3,8 @@ export default class GetData {
     try {
       const response = await fetch("https://api.spacexdata.com/v5/launches");
 
-      const data = await response.json();
+      const datas = await response.json();
+      const data = datas.reverse();
 
       console.log(response);
       console.log(data);

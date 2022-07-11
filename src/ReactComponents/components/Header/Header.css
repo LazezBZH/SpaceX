@@ -4,6 +4,7 @@ header {
   height: 23rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: auto;
   position: fixed;
   top: 0;
@@ -11,6 +12,7 @@ header {
   right: 0;
   background-color: black;
   border-bottom: solid rgba(255, 255, 0, 0.6) 0.3rem;
+  z-index: 99;
 }
 h1 {
   font-size: 6rem;
@@ -21,6 +23,11 @@ h1 {
   box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
   -webkit-box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
   -moz-box-shadow: 17px 16px 18px 0px rgba(255, 255, 255, 0.76);
+}
+h2 {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  color: rgb(209, 208, 208);
 }
 .white-content h1 {
   color: black;
@@ -33,4 +40,7 @@ h1 {
 .white-content header {
   background-color: white;
   border-bottom: solid rgba(1, 50, 88, 0.6) 0.3rem;
+}
+.white-content h2 {
+  color: grey;
 }
