@@ -2,7 +2,7 @@
   background-color: black;
   color: white;
   margin: auto;
-  max-width: 2500px;
+  max-width: 2000px;
 }
 
 .white-content .home {
@@ -10,11 +10,7 @@
   background-color: white;
   color: black;
 }
-
-.gallery {
+.main {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  margin-top: 23rem;
 }

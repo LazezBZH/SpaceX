@@ -1,0 +1,12 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 23rem;
+}
+.aside {
+  width: 25%;
+
+  margin-top: 23rem;
+}

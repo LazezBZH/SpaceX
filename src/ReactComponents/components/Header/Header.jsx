@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1>SpaceX</h1>
-      <h2>view all launches, enjoy videos and pictures</h2>
+      <h2>find all launches, enjoy videos and pictures</h2>
       <ToggleButton />
     </header>
   );

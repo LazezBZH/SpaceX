@@ -1,30 +1,40 @@
 export default class GetData {
-  async getLaunches() {
+  async getLaunches(option) {
     try {
       const response = await fetch("https://api.spacexdata.com/v5/launches");
 
       const datas = await response.json();
       const data = datas.reverse();
-
-      console.log(response);
       console.log(data);
-
       return data;
     } catch (error) {
       console.log(error);
     }
   }
 
-  async getOneLaunch() {
+  async getNextLaunch() {
+    try {
+      const response = await fetch(
+        "https://api.spacexdata.com/v5/launches/next"
+      );
+
+      const data = await response.json();
+
+      return data;
+    } catch (error) {
+      console.error("NEXT", error);
+    }
+  }
+  async getLastLaunch() {
     try {
       const response = await fetch(
         "https://api.spacexdata.com/v5/launches/latest"
       );
       const data = await response.json();
-      console.log(data);
+
       return data;
     } catch (error) {
-      console.error(error);
+      console.error("LAST", error);
     }
   }
 }

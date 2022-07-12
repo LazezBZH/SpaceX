@@ -1,94 +1,82 @@
-.thumb {
-  background-color: rgb(36, 36, 36);
-  border: solid 2px rgba(12, 12, 12, 0.9);
-  box-shadow: 1px 1px 12px #555;
+.last {
+  background-color: rgb(242, 242, 172);
+  border: solid 2px rgba(61, 61, 61, 0.9);
+  box-shadow: 5px 5px 20px yellow;
   border-radius: 5px;
 }
 
-.thumb img {
+.last img {
   width: 25rem;
   height: 20rem;
   object-fit: contain;
   margin-top: 1rem;
 }
-.thumb h2 {
+.last h2 {
+  color: black;
   font-size: 1.5rem;
   font-weight: bolder;
   margin-bottom: 0.5rem;
   padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
-.thumb figcaption {
+.last p {
+  color: black;
+}
+.last figcaption {
   width: 25rem;
   text-align: left;
   padding-left: 1rem;
   padding-bottom: 1rem;
 }
-.thumb a {
+.last a {
   color: rgb(225, 170, 170);
   text-decoration: none;
   font-weight: bold;
   border: solid 2px rgb(225, 170, 170);
   padding: 0 0.5rem;
 }
-.name {
+.last .name {
   width: 24rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.name button {
+.last .name button {
   width: 5rem;
   height: 3rem;
   border-radius: 0.5rem;
+  background-color: white;
 }
 
-.incomming {
-  text-align: right;
-  margin-right: 1rem;
-  color: rgba(255, 255, 0, 0.6);
+.last .color-details {
+  color: rgb(121, 45, 45);
   font-weight: bold;
 }
-.success {
-  width: 5rem;
+
+.last .success {
+  width: 7rem;
+  font-size: 2rem;
   padding: 0.2rem;
   margin-top: 1rem;
+  margin-left: 16rem;
   text-align: center;
   color: white;
   background-color: red;
   transform: rotate(-20deg);
 }
 
-.caption1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.clign {
-  animation: clignote 1500ms linear infinite;
-}
-@keyframes clignote {
-  50% {
-    opacity: 0;
-  }
-}
-.color-details {
-  color: rgb(225, 170, 170);
-  font-weight: bold;
-}
-
-.white-content .thumb {
-  background-color: white;
+.white-content .last {
+  background-color: rgba(1, 50, 88, 0.2);
   border: solid 2px rgba(149, 147, 147, 0.5);
+  box-shadow: 5px 5px 20px rgba(1, 50, 88);
 }
-.white-content .incomming {
-  color: rgba(1, 50, 88, 0.6);
+
+.white-content .last .color-details {
+  color: rgb(45, 56, 99);
 }
-.white-content .color-details {
-  color: rgb(124, 63, 63);
-}
-.white-content .thumb a {
+.white-content .last a {
   color: rgb(124, 63, 63);
   border: solid 2px rgb(124, 63, 63);
+}
+.white-content .last h2 {
+  color: black;
 }

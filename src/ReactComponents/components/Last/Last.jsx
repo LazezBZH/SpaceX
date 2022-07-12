@@ -1,10 +1,9 @@
-import "./Thumb.css";
+import "./Last.css";
 import nopict from "../../../assets/no-image.png";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-//import { Link } from "react-router-dom";
 
-export default function Thumb({ launch }) {
+export default function Last({ launch }) {
   const date = new Date(launch.date_utc);
 
   const day = date.getDate();
@@ -16,36 +15,14 @@ export default function Thumb({ launch }) {
 
   return (
     <>
-      <figure className="thumb">
+      <figure className="last">
         {openModal && (
           <Modal close={onCloseModal} videoId={launch.links.youtube_id} />
         )}
-        <figcaption className="caption1">
-          <div>
-            {launch.upcoming === false ? (
-              <div>
-                {launch.success === true ? (
-                  <p className="success">Success &#x1F44D;</p>
-                ) : (
-                  <p className="success">Fail &#x1F44E;</p>
-                )}
-              </div>
-            ) : (
-              <p className="empty"></p>
-            )}
-          </div>
 
-          <div className="incomming">
-            {launch.upcoming === false ? (
-              <p>Passed</p>
-            ) : (
-              <p className="clign">Incomming</p>
-            )}
-          </div>
-        </figcaption>
         {launch.links.flickr.original[0] ? (
           <img
-            className="thumb_img"
+            className="last_img"
             src={launch.links.flickr.original[0]}
             alt={launch.name}
           />
@@ -91,6 +68,13 @@ export default function Thumb({ launch }) {
               </a>
             ) : (
               <></>
+            )}
+          </div>
+          <div>
+            {launch.success === true ? (
+              <p className="success">Success &#x1F44D;</p>
+            ) : (
+              <p className="success">Fail &#x1F44E;</p>
             )}
           </div>
         </figcaption>
