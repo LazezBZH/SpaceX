@@ -53,36 +53,40 @@ export default function Thumb({ launch }) {
           <img src={nopict} alt="" />
         )}
         <figcaption>
-          <div className="name">
-            <div>
-              <h2>
-                <span className="color-details">Name:</span> {launch.name}
-              </h2>
+          <div>
+            {" "}
+            <div className="name">
+              <div className="main-caption">
+                <h2>
+                  <span className="color-details">Name:</span> {launch.name}
+                </h2>
+              </div>
+              <div>
+                {launch.links.youtube_id ? (
+                  <button onClick={() => setOpenModal(true)}>
+                    Video &#x1F3A5;
+                  </button>
+                ) : (
+                  <button disabled>No video</button>
+                )}
+              </div>
             </div>
-            <div>
-              {launch.links.youtube_id ? (
-                <button onClick={() => setOpenModal(true)}>
-                  Video &#x1F3A5;
-                </button>
+            <p>
+              <span className="color-details">Date:</span> {day}/{month}/{year}
+            </p>
+            <div className="details">
+              {launch.details ? (
+                <p>
+                  <span className="color-details">Details:</span>{" "}
+                  {launch.details}
+                </p>
               ) : (
-                <button disabled>No video</button>
+                <p>
+                  {" "}
+                  <span className="color-details">Sorry no details</span>
+                </p>
               )}
             </div>
-          </div>
-          <p>
-            <span className="color-details">Date:</span> {day}/{month}/{year}
-          </p>
-          <div>
-            {launch.details ? (
-              <p>
-                <span className="color-details">Details:</span> {launch.details}
-              </p>
-            ) : (
-              <p>
-                {" "}
-                <span className="color-details">Sorry no details</span>
-              </p>
-            )}
           </div>
           <div>
             {launch.links.article ? (
