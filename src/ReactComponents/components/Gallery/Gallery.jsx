@@ -1,5 +1,4 @@
 import Thumb from "../Thumb/Thumb";
-//import Next from "../Next/Next";
 
 import GetAll from "../../../utils/getApi";
 import { useEffect, useState } from "react";
@@ -17,8 +16,7 @@ export default function Gallery() {
 
     getLaunches();
   }, []);
-  //let launch = launches[0];
-  //console.log("launch", launch);
+  console.log("launches", launches);
   return (
     <div className="gallery">
       {launches.map((launch) => {
