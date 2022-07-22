@@ -16,7 +16,7 @@ export default function Gallery() {
 
     getLaunches();
   }, []);
-  console.log("launches", launches);
+  // console.log("launches", launches);
   return (
     <div className="gallery">
       {launches.map((launch) => {

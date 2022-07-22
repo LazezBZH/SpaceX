@@ -1,3 +1,4 @@
+// import NextLaunch from "../models/NextLaunch";
 export default class GetData {
   async getLaunches() {
     try {
@@ -15,7 +16,7 @@ export default class GetData {
   async getNextLaunch() {
     try {
       const response = await fetch(
-        "https://api.spacexdata.com/v5/launches/next/"
+        "https://api.spacexdata.com/v5/launches/next"
       );
 
       const data = await response.json();
@@ -35,6 +36,18 @@ export default class GetData {
       return data;
     } catch (error) {
       console.error("LAST", error);
+    }
+  }
+  async getCrews() {
+    try {
+      const response = await fetch("https://api.spacexdata.com/v4/crew");
+
+      const datas = await response.json();
+      const data = datas.reverse();
+
+      return data;
+    } catch (error) {
+      console.log(error);
     }
   }
 }

@@ -1,0 +1,71 @@
+.crew-thumb {
+  background-color: rgb(36, 36, 36);
+  border: solid 2px rgba(12, 12, 12, 0.9);
+  box-shadow: 1px 1px 12px #555;
+  border-radius: 5px;
+}
+
+.crew-thumb img {
+  width: 18rem;
+  height: 18rem;
+  object-fit: contain;
+  margin-top: 1rem;
+}
+.crew-thumb h2 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.crew-thumb figcaption {
+  width: 20rem;
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+.crew-thumb a {
+  color: rgb(10, 234, 234);
+  text-decoration: none;
+  font-weight: bold;
+  border: solid 2px rgb(10, 234, 234);
+  padding: 0 0.5rem;
+}
+.crew-name {
+  width: 19.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.caption1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.crew-color-details {
+  color: rgb(10, 234, 234);
+  font-weight: bold;
+}
+.main-caption {
+  height: 6.5rem;
+}
+.details {
+  height: 12.1rem;
+  overflow: auto;
+  margin-bottom: 1rem;
+}
+
+.white-content .crew-thumb {
+  background-color: white;
+  border: solid 2px rgba(149, 147, 147, 0.5);
+}
+
+.white-content .crew-color-details {
+  color: rgb(59, 59, 219);
+}
+.white-content .crew-thumb a {
+  color: rgb(59, 59, 219);
+  border: solid 2px rgb(59, 59, 219);
+}

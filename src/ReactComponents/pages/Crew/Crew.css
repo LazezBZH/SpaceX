@@ -1,0 +1,16 @@
+.home {
+  background-color: black;
+  color: white;
+  margin: auto;
+  max-width: 2000px;
+}
+
+.white-content .home {
+  background-color: rgba(149, 147, 147, 0.229);
+  background-color: white;
+  color: black;
+}
+.main {
+  width: 100%;
+  display: flex;
+}

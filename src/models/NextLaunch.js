@@ -7,13 +7,13 @@ export default class NextLaunch {
   details;
   article;
 
-  constructor(data) {
-    this.video = data.links.youtube_id;
-    this.upcoming = data.upcoming;
-    this.success = data.success;
-    this.image = data.links.flickr.original[0];
-    this.name = data.name;
-    this.details = data.details;
-    this.article = data.links.article;
+  constructor(links, upcoming, success, name, details) {
+    this.video = links.youtube_id;
+    this.upcoming = upcoming;
+    this.success = success;
+    // this.image = links.flickr.original[0];
+    this.name = name;
+    this.details = details;
+    this.article = links.article;
   }
 }

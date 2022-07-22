@@ -6,11 +6,11 @@ import Modal from "../Modal/Modal";
 
 export default function Thumb({ launch }) {
   const date = new Date(launch.date_utc);
-
+  // const time = date.getTime();
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
-
+  // console.log(time);
   const [openModal, setOpenModal] = useState(false);
   const onCloseModal = () => setOpenModal(false);
 
