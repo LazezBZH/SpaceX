@@ -74,6 +74,10 @@ export default function Thumb({ launch }) {
             <p>
               <span className="color-details">Date:</span> {day}/{month}/{year}
             </p>
+            <p>
+              <span className="color-details">Fligth number:</span>{" "}
+              {launch.flight_number}
+            </p>
             <div className="details">
               {launch.details ? (
                 <p>

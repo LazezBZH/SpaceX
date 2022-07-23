@@ -2,35 +2,6 @@ import "./Next.css";
 import nopict from "../../../assets/no-image.png";
 
 export default function Next({ nextLaunch, timeToLaunch }) {
-  // const [timeToLaunch, setTimeToLaunch] = useState();
-  // const [date, setDate] = useState();
-  // const dateLaunch = new Date(nextLaunch.date_utc);
-
-  // const day = date.getDate();
-  // const month = date.getMonth() + 1;
-  // const year = date.getFullYear();
-
-  // let dateNow = Date.now();
-  // let time = date - dateNow;
-  // console.log(time);
-
-  // const getInterval = () => {
-  //   const getCurrentTime = useCallback(() => {
-  //     let dateNow = Date.now();
-  //     setDate(dateNow);
-  //   }, []);
-
-  //   useEffect(() => {
-  //     const timer = setInterval(() => getCurrentTime(), 1000);
-  //     return () => clearTimeout(timer);
-  //   }, [getCurrentTime]);
-  //   console.log("coucou", dateNow);
-  //   return {
-  //     dateNow,
-  //   };
-  // };
-
-  // getInterval(dateNow);
   return (
     <>
       {timeToLaunch > 0 ? (
