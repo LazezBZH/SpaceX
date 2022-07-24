@@ -38,7 +38,7 @@
   border-radius: 50%;
   box-shadow: inset 0 0 55px rgba(255, 255, 255, 0.1);
 
-  animation: launchcrew 2s linear infinite;
+  animation: launchcrew 2200ms linear infinite;
 }
 .crew-rocket:before {
   content: "";
@@ -52,7 +52,7 @@
   filter: blur(25px);
   z-index: -1;
   transform: rotate(45deg);
-  animation: firecrew 2s linear infinite;
+  animation: firecrew 2200ms linear infinite;
 }
 @keyframes launchcrew {
   0% {
