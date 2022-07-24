@@ -1,7 +1,8 @@
 header {
   width: 100%;
   max-width: 2000px;
-  height: 23rem;
+  height: 0;
+  opacity: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -12,7 +13,19 @@ header {
   right: 0;
   background-color: black;
   border-bottom: solid rgba(255, 255, 0, 0.6) 0.3rem;
-  z-index: 99;
+  z-index: 1;
+  animation: visible 5ms linear forwards;
+  animation-delay: 2s;
+}
+@keyframes visible {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 23rem;
+  }
 }
 h1 {
   font-size: 6rem;
@@ -40,6 +53,9 @@ h2 {
   text-decoration: none;
   color: black;
 }
+.header button {
+  padding: 0.5rem;
+}
 .white-content h1 {
   color: black;
   border: white solid 2rem;
@@ -58,7 +74,6 @@ h2 {
 .white-content .link {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.white-content .header a {
-  text-decoration: none;
+.white-content .link a {
   color: white;
 }

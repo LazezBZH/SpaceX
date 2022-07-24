@@ -1,9 +1,10 @@
 import CrewThumb from "../Thumb/CrewThumb";
+import UpBtn from "../upBtn/upBtn";
 
 import GetAll from "../../../utils/getApi";
 import { useEffect, useState } from "react";
 
-import "./Gallery.css";
+import "./CrewGallery.css";
 
 export default function CrewGallery() {
   const [crews, setCrews] = useState([]);
@@ -18,7 +19,8 @@ export default function CrewGallery() {
   }, []);
   console.log("crews", crews);
   return (
-    <div className="gallery">
+    <div className="crew-gallery">
+      <UpBtn />
       {crews.map((crew) => {
         return <CrewThumb key={crew.name} crew={crew} />;
       })}

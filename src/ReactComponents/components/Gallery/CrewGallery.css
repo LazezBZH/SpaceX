@@ -1,0 +1,12 @@
+.crew-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 24rem;
+}
+.crew-gallery .top-btn {
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+}

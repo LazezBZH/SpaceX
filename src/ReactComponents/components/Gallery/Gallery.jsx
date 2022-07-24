@@ -1,4 +1,5 @@
 import Thumb from "../Thumb/Thumb";
+import UpBtn from "../upBtn/upBtn";
 
 import GetAll from "../../../utils/getApi";
 import { useEffect, useState, useMemo } from "react";
@@ -30,12 +31,19 @@ export default function Gallery() {
       return launches.filter((item) => !item.upcoming);
     } else if (selectedCategory === "success") {
       return launches.filter((item) => item.success);
+    } else if (selectedCategory === "pictures") {
+      return launches.filter((item) => item.links.flickr.original[0]);
+    } else if (selectedCategory === "details") {
+      return launches.filter((item) => item.details);
+    } else if (selectedCategory === "links") {
+      return launches.filter((item) => item.links.article);
     }
     return launches.filter((item) => !item.upcoming && !item.success);
   }
-  var filteredList = useMemo(getFilteredList, [selectedCategory, launches]);
+  let filteredList = useMemo(getFilteredList, [selectedCategory, launches]);
   return (
     <div className="all-gallery">
+      <UpBtn />
       <div className="filter">
         <p>FILTER</p>
         <select
@@ -48,6 +56,9 @@ export default function Gallery() {
           <option value="false">Passed</option>
           <option value="success">Success</option>
           <option value="failed">Failed</option>
+          <option value="pictures">With picture</option>
+          <option value="details">With details</option>
+          <option value="links">Link avaiable</option>
         </select>
       </div>
       <div className="gallery">
