@@ -1,7 +1,14 @@
 import "./Next.css";
-import nopict from "../../../assets/no-image.png";
+import rocket from "../../../assets/rocket.jpg";
 
-export default function Next({ nextLaunch, timeToLaunch }) {
+export default function Next({
+  nextLaunch,
+  timeToLaunch,
+  days,
+  hours,
+  minutes,
+  secondes,
+}) {
   return (
     <>
       {timeToLaunch > 0 ? (
@@ -13,7 +20,7 @@ export default function Next({ nextLaunch, timeToLaunch }) {
               alt={nextLaunch.name}
             />
           ) : (
-            <img src={nopict} alt="" />
+            <img src={rocket} alt="" />
           )}
           <figcaption>
             <div className="name">
@@ -26,6 +33,13 @@ export default function Next({ nextLaunch, timeToLaunch }) {
             <p>
               <span className="color-details">Next launch in: </span>
               {timeToLaunch} <span>secondes</span>
+            </p>
+            <p>
+              {days}
+              <span className="color-details"> d </span>
+              {hours} <span className="color-details"> h </span>
+              {minutes} <span className="color-details"> min </span>
+              {secondes} <span className="color-details"> sec </span>
             </p>
 
             <div>
@@ -41,7 +55,7 @@ export default function Next({ nextLaunch, timeToLaunch }) {
         </figure>
       ) : (
         <figure className="next">
-          <img src={nopict} alt="" />
+          <img src={rocket} alt="" />
 
           <figcaption>
             <div className="soon">

@@ -22,7 +22,12 @@ export default function UpBtn() {
   };
   return (
     <div className="top-btn">
-      {showTopBtn && <button onClick={goToTop}>&#x2B06; UP &#x2B06;</button>}
+      {showTopBtn && (
+        <button onClick={goToTop}>
+          <i class="fa fa-rocket" aria-hidden="true"></i> UP
+          <i class="fa fa-rocket" aria-hidden="true"></i>
+        </button>
+      )}
     </div>
   );
 }

@@ -18,10 +18,24 @@ const Header = () => {
         <ToggleButton />
         <div className="header-btn">
           <div className="link">
-            <Link to="/">Launches &#x1F680;</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0 });
+              }}
+            >
+              Launches &#x1F680;
+            </Link>
           </div>
           <div className="link">
-            <Link to="/crew">Crew &#x1F469;&#x200D;&#x1F680;</Link>
+            <Link
+              to="/crew"
+              onClick={() => {
+                window.scrollTo({ top: 0, left: 0 });
+              }}
+            >
+              Crew &#x1F469;&#x200D;&#x1F680;
+            </Link>
           </div>
         </div>
       </div>

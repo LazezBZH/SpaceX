@@ -21,20 +21,14 @@ export default function Aside() {
   console.log("NEXT", nextLaunch);
 
   const [timeToLaunch, setTimeToLaunch] = useState();
-  // const [dateLaunch, setDateLaunch] = useState();
   const [date, setDate] = useState();
+  const [days, setDays] = useState();
+  const [hours, setHours] = useState();
+  const [minutes, setMinutes] = useState();
+  const [secondes, setSecondes] = useState();
 
-  // let dateLaunch = Date(dateL);
-
-  // console.log(time);
-  // console.log("datL", dateLaunch);
-
-  // console.log("time", time);
   let dateLaunch = nextLaunch.date_unix;
-  // thisDateLaunch = parseInt(thisDateLaunch);
-  // useEffect(() => {
-  //   setDateLaunch(thisDateLaunch);
-  // }, [thisDateLaunch]);
+
   console.log("datlelaunch", dateLaunch);
 
   const useDate = () => {
@@ -70,19 +64,37 @@ export default function Aside() {
     getNextLaunchDate();
   }, [time]);
 
+  let daysToUse = Math.floor(time / 86400);
+  let hoursToUse = Math.floor((time % 86400) / 3600);
+  let minutesToUse = Math.floor(((time % 86400) % 3600) / 60);
+  let secondesToUse = Math.floor(((time % 86400) % 3600) % 60);
+
+  useEffect(() => {
+    function getDaysHoursMinutes() {
+      setDays(daysToUse);
+      setHours(hoursToUse);
+      setMinutes(minutesToUse);
+      setSecondes(secondesToUse);
+    }
+
+    getDaysHoursMinutes();
+  }, [daysToUse, hoursToUse, minutesToUse, secondesToUse]);
+
   return (
     <div className="aside">
       <div className="aside-inside">
         <div>
           <h2>NEXT LAUNCH</h2>
 
-          <Next nextLaunch={nextLaunch} timeToLaunch={timeToLaunch} />
+          <Next
+            nextLaunch={nextLaunch}
+            timeToLaunch={timeToLaunch}
+            days={days}
+            hours={hours}
+            minutes={minutes}
+            secondes={secondes}
+          />
         </div>
-        {/* <div className="separate"></div>
-        <div>
-          <h2>LAST LAUNCH</h2>
-          <Last launch={lastLaunch} />
-        </div> */}
       </div>
     </div>
   );

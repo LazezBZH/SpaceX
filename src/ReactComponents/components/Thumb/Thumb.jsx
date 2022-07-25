@@ -20,7 +20,7 @@ export default function Thumb({ launch }) {
         {openModal && (
           <Modal close={onCloseModal} videoId={launch.links.youtube_id} />
         )}
-        <figcaption className="caption1">
+        <figcaption className="caption1" id="caption1">
           <div>
             {launch.upcoming === false ? (
               <div>

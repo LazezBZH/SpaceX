@@ -9,6 +9,7 @@
   width: 15rem;
   height: 15rem;
   object-fit: contain;
+  margin-top: -1rem;
 }
 .thumb h2 {
   font-size: 1.2rem;
@@ -45,6 +46,7 @@
 .incomming {
   text-align: right;
   margin-right: 1rem;
+  margin-bottom: 1rem;
   color: rgba(255, 255, 0, 0.6);
   font-weight: bold;
 }
@@ -58,10 +60,11 @@
   transform: rotate(-20deg);
 }
 
-.caption1 {
+#caption1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 
 .clign {
@@ -75,6 +78,7 @@
 .color-details {
   color: rgb(225, 170, 170);
   font-weight: bold;
+  font-size: 1rem;
 }
 .main-caption {
   height: 6.5rem;
@@ -88,6 +92,7 @@
 .details p {
   margin: 0;
   padding-right: 0.6rem;
+  font-size: 0.8rem;
 }
 .details::-webkit-scrollbar {
   width: 0.3rem;

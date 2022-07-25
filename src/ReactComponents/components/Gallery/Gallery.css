@@ -8,11 +8,7 @@
   flex-wrap: wrap;
   margin: auto;
 }
-.aside {
-  width: 25%;
 
-  margin-top: 23rem;
-}
 .filter p {
   font-size: 1.3rem;
   font-weight: bold;
