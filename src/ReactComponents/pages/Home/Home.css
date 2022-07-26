@@ -1,7 +1,7 @@
 .home {
   background-color: black;
   color: white;
-  margin: auto;
+
   max-width: 2000px;
 }
 
@@ -13,6 +13,7 @@
 .main {
   width: 100%;
   display: flex;
+  margin: auto;
 }
 
 .loader {
@@ -20,7 +21,6 @@
   height: 100vh;
   background: linear-gradient(#444444, #000000);
   margin: 0;
-
   padding: 0;
   animation: invisible 5ms linear forwards;
   animation-delay: 2s;
@@ -28,7 +28,7 @@
 }
 .rocket {
   position: absolute;
-  top: 60%;
+  bottom: 20vh;
   left: 15%;
   width: 200px;
   height: 200px;
@@ -37,7 +37,7 @@
   line-height: 200px;
   border-radius: 50%;
   box-shadow: inset 0 0 55px rgba(255, 255, 255, 0.1);
-  animation: launch 2s linear infinite;
+  animation: launch 2200ms linear 1;
 }
 .rocket:before {
   content: "";
@@ -51,7 +51,7 @@
   filter: blur(15px);
   z-index: -1;
   transform: rotate(45deg);
-  animation: fire 2s linear infinite;
+  animation: fire 2200ms linear 1;
 }
 @keyframes launch {
   0% {
@@ -98,5 +98,6 @@
   100% {
     opacity: 0;
     height: 0%;
+    width: 0%;
   }
 }
