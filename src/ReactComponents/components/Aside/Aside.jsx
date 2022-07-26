@@ -18,7 +18,7 @@ export default function Aside() {
 
     getNextLaunch();
   }, []);
-  console.log("NEXT", nextLaunch);
+  // console.log("NEXT", nextLaunch);
 
   const [timeToLaunch, setTimeToLaunch] = useState();
   const [date, setDate] = useState();
@@ -29,7 +29,7 @@ export default function Aside() {
 
   let dateLaunch = nextLaunch.date_unix;
 
-  console.log("datlelaunch", dateLaunch);
+  // console.log("datlelaunch", dateLaunch);
 
   const useDate = () => {
     const getCurrentTime = useCallback(() => {
@@ -37,7 +37,7 @@ export default function Aside() {
       let thisDate = Date.now(today);
       let goodDate = Math.floor(thisDate / 1000);
 
-      console.table("DATE", goodDate);
+      // console.table("DATE", goodDate);
       setDate(goodDate);
     }, []);
     useEffect(() => {
@@ -54,7 +54,7 @@ export default function Aside() {
 
   let time = parseInt(dateLaunch) - parseInt(date);
 
-  console.table("timeToLaunch", time);
+  // console.table("timeToLaunch", time);
 
   useEffect(() => {
     function getNextLaunchDate() {

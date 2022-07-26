@@ -50,4 +50,18 @@ export default class GetData {
       console.log(error);
     }
   }
+
+  async getOneCrew(id) {
+    try {
+      let url = "https://api.spacexdata.com/v4/crew/" + id;
+      console.log("URL", url);
+      const response = await fetch(url);
+
+      const data = await response.json();
+
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }

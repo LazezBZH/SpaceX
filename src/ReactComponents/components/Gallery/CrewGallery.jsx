@@ -17,7 +17,7 @@ export default function CrewGallery() {
 
     getCrews();
   }, []);
-  console.log("crews", crews);
+  // console.log("crews", crews);
   return (
     <div className="crew-gallery">
       <UpBtn />

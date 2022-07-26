@@ -9,7 +9,7 @@ import "./Gallery.css";
 export default function Gallery() {
   const [launches, setLaunches] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
-
+  console.log("launches", launches[80]);
   useEffect(() => {
     function getLaunches() {
       const data = new GetAll();
@@ -36,7 +36,11 @@ export default function Gallery() {
     } else if (selectedCategory === "details") {
       return launches.filter((item) => item.details);
     } else if (selectedCategory === "links") {
-      return launches.filter((item) => item.links.article);
+      return launches.filter(
+        (item) => item.links.article || item.links.wikipedia
+      );
+    } else if (selectedCategory === "crew") {
+      return launches.filter((item) => item.crew.length > 0);
     }
     return launches.filter((item) => !item.upcoming && !item.success);
   }
@@ -59,6 +63,7 @@ export default function Gallery() {
           <option value="pictures">With picture</option>
           <option value="details">With details</option>
           <option value="links">Link avaiable</option>
+          <option value="crew">With crew details</option>
         </select>
       </div>
       <div className="gallery">

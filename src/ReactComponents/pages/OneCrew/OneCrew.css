@@ -1,0 +1,95 @@
+.one-crew {
+  width: 80%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  margin: auto;
+  max-width: 2000px;
+  background-image: url("../../../assets/earth.jpg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 35%;
+}
+.one-crew .header {
+  animation: none;
+  width: 100%;
+  max-width: 2000px;
+  height: 15rem;
+  opacity: 1;
+}
+.one-crew-main {
+  width: 80%;
+  margin: auto;
+  margin-top: 15rem;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.one-crew-thumb {
+  background-color: rgb(36, 36, 36);
+  border: solid 2px rgba(12, 12, 12, 0.9);
+  box-shadow: 1px 1px 12px #555;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+.one-crew-thumb img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: contain;
+  margin: 1rem;
+}
+
+.one-crew figure {
+  display: flex;
+}
+.one-crew-thumb figcaption {
+  text-align: left;
+  padding: 4rem;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+.one-crew-thumb figcaption img {
+  position: absolute;
+  top: 0;
+  right: -5rem;
+}
+.one-crew-name {
+  width: 90%;
+}
+.one-crew-thumb a {
+  color: rgb(10, 234, 234);
+  text-decoration: none;
+  font-weight: bold;
+  border: solid 2px rgb(10, 234, 234);
+  padding: 0 0.5rem;
+}
+
+.one-crew-color-details {
+  color: rgb(10, 234, 234);
+  font-weight: bold;
+}
+.back {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.white-content .one-crew-thumb {
+  background-color: white;
+  border: solid 2px rgba(149, 147, 147, 0.5);
+}
+
+.white-content .one-crew-color-details {
+  color: rgb(59, 59, 219);
+}
+.white-content .one-crew-thumb a {
+  color: rgb(59, 59, 219);
+  border: solid 2px rgb(59, 59, 219);
+}
+.white-content .one-crew {
+  background-color: rgba(149, 147, 147, 0.229);
+  background-color: white;
+  color: black;
+}

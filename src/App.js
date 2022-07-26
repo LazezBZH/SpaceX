@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import Home from "./ReactComponents/pages/Home/Home";
 import Error from "./ReactComponents/pages/Error/Error";
 import Crew from "./ReactComponents/pages/Crew/Crew";
+import OneCrew from "./ReactComponents/pages/OneCrew/OneCrew";
 
 import "./App.css";
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/crew" element={<Crew />} />
+          <Route path="/onecrew/:id" element={<OneCrew />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

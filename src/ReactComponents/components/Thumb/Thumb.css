@@ -7,9 +7,9 @@
 
 .thumb img {
   width: 15rem;
-  height: 15rem;
+  height: 12rem;
   object-fit: contain;
-  margin-top: -1rem;
+  margin-top: 0.1rem;
 }
 .thumb h2 {
   font-size: 1.2rem;
@@ -30,6 +30,9 @@
   font-weight: bold;
   border: solid 2px rgb(225, 170, 170);
   padding: 0 0.5rem;
+}
+.link-article {
+  margin-bottom: 0.5rem;
 }
 .name {
   width: 19.5rem;
@@ -66,7 +69,23 @@
   justify-content: space-between;
   padding-bottom: 0;
 }
+.launch-crew {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 0 0.5rem;
+  margin-top: 0.2rem;
+  border-radius: 1rem 0;
+}
 
+.launch-crew p {
+  margin: 0;
+  font-size: 0.6rem;
+  line-height: 0;
+}
+.launch-crew a {
+  border: none;
+  margin: 0;
+}
 .clign {
   animation: clignote 1500ms linear infinite;
 }
@@ -110,8 +129,10 @@
 }
 .white-content .thumb a {
   color: rgb(124, 63, 63);
-  border: solid 2px rgb(124, 63, 63);
 }
 .white-content .details::-webkit-scrollbar {
   background-color: rgb(113, 111, 111);
+}
+.white-content .launch-crew {
+  background-color: rgba(1, 50, 88, 0.2);
 }

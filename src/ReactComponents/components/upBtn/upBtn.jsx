@@ -24,8 +24,8 @@ export default function UpBtn() {
     <div className="top-btn">
       {showTopBtn && (
         <button onClick={goToTop}>
-          <i class="fa fa-rocket" aria-hidden="true"></i> UP
-          <i class="fa fa-rocket" aria-hidden="true"></i>
+          <i className="fa fa-rocket" aria-hidden="true"></i> UP
+          <i className="fa fa-rocket" aria-hidden="true"></i>
         </button>
       )}
     </div>

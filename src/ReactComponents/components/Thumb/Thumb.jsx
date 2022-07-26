@@ -2,15 +2,15 @@ import "./Thumb.css";
 import nopict from "../../../assets/no-image.png";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Thumb({ launch }) {
   const date = new Date(launch.date_utc);
-  // const time = date.getTime();
+
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
-  // console.log(time);
+
   const [openModal, setOpenModal] = useState(false);
   const onCloseModal = () => setOpenModal(false);
 
@@ -20,6 +20,7 @@ export default function Thumb({ launch }) {
         {openModal && (
           <Modal close={onCloseModal} videoId={launch.links.youtube_id} />
         )}
+
         <figcaption className="caption1" id="caption1">
           <div>
             {launch.upcoming === false ? (
@@ -34,7 +35,25 @@ export default function Thumb({ launch }) {
               <p className="empty"></p>
             )}
           </div>
-
+          <div className="launch-crew">
+            {launch.crew.length > 0 ? (
+              launch.crew.map((cre) => {
+                return (
+                  <Link
+                    onClick={() => {
+                      window.scrollTo({ top: 0, left: 0 });
+                    }}
+                    key={cre.crew}
+                    to={`/onecrew/${cre.crew}`}
+                  >
+                    <p>See: {cre.role} </p>
+                  </Link>
+                );
+              })
+            ) : (
+              <></>
+            )}
+          </div>
           <div className="incomming">
             {launch.upcoming === false ? (
               <p>Passed</p>
@@ -54,7 +73,6 @@ export default function Thumb({ launch }) {
         )}
         <figcaption>
           <div>
-            {" "}
             <div className="name">
               <div className="main-caption">
                 <h2>
