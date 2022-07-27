@@ -12,7 +12,7 @@ export default function Crew() {
         </div>
       </div>
       <Header />
-      <div className="main">
+      <div className="crew-main">
         <CrewGallery />
       </div>
     </div>

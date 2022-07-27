@@ -1,18 +1,13 @@
 .home {
   background-color: black;
   color: white;
-
   max-width: 2000px;
+  margin: auto;
 }
 
-.white-content .home {
-  background-color: rgba(149, 147, 147, 0.229);
-  background-color: white;
-  color: black;
-}
 .main {
-  width: 100%;
   display: flex;
+
   margin: auto;
 }
 
@@ -30,6 +25,7 @@
   position: absolute;
   bottom: 20vh;
   left: 15%;
+
   width: 200px;
   height: 200px;
   text-align: center;
@@ -55,7 +51,7 @@
 }
 @keyframes launch {
   0% {
-    transform: translate(-20px, -20px);
+    transform: translate(-10%, -10%);
   }
   25% {
     transform: translate(20px, 0px);
@@ -100,4 +96,9 @@
     height: 0%;
     width: 0%;
   }
+}
+.white-content .home {
+  background-color: rgba(149, 147, 147, 0.229);
+  background-color: white;
+  color: black;
 }

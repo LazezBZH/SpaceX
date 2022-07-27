@@ -83,18 +83,16 @@ export default function Aside() {
   return (
     <div className="aside">
       <div className="aside-inside">
-        <div>
-          <h2>NEXT LAUNCH</h2>
+        <h2>NEXT LAUNCH</h2>
 
-          <Next
-            nextLaunch={nextLaunch}
-            timeToLaunch={timeToLaunch}
-            days={days}
-            hours={hours}
-            minutes={minutes}
-            secondes={secondes}
-          />
-        </div>
+        <Next
+          nextLaunch={nextLaunch}
+          timeToLaunch={timeToLaunch}
+          days={days}
+          hours={hours}
+          minutes={minutes}
+          secondes={secondes}
+        />
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .one-crew {
-  width: 80%;
+  width: 90%;
   height: 100vh;
   background-color: black;
   color: white;
@@ -20,7 +20,7 @@
 .one-crew-main {
   width: 80%;
   margin: auto;
-  margin-top: 15rem;
+
   padding-top: 3rem;
   position: relative;
 }

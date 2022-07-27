@@ -1,8 +1,5 @@
 import "./CrewThumb.css";
-import nopict from "../../../assets/no-image.png";
-// import { useState } from "react";
-// import Modal from "../Modal/Modal";
-//import { Link } from "react-router-dom";
+import nopict from "../../../assets/no-photo.png";
 
 export default function CrewThumb({ crew }) {
   return (

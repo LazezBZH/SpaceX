@@ -3,14 +3,10 @@
   color: white;
 
   max-width: 2000px;
+  margin: auto;
 }
 
-.white-content .crew-home {
-  background-color: rgba(149, 147, 147, 0.229);
-  background-color: white;
-  color: black;
-}
-.main {
+.crew-main {
   width: 100%;
   display: flex;
   margin: auto;
@@ -100,4 +96,9 @@
     opacity: 0;
     height: 0%;
   }
+}
+.white-content .crew-home {
+  background-color: rgba(149, 147, 147, 0.229);
+  background-color: white;
+  color: black;
 }

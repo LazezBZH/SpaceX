@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import GetAll from "../../../utils/getApi";
 import { Link } from "react-router-dom";
-import nopict from "../../../assets/no-image.png";
+import nopict from "../../../assets/no-photo.png";
 import spacex from "../../../assets/spacex-logo.png";
 
 import "./OneCrew.css";

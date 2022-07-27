@@ -1,8 +1,10 @@
 .App {
+  width: 100%;
   text-align: center;
   background-image: url("./assets/rocket-black.jpg");
 
   background-size: 5%;
+  margin: auto;
 }
 
 .white-content .App {

@@ -10,9 +10,9 @@ export default function Next({
   secondes,
 }) {
   return (
-    <>
+    <div className="next">
       {timeToLaunch > 0 ? (
-        <figure className="next">
+        <figure>
           {nextLaunch.image ? (
             <img
               className="next_img"
@@ -23,11 +23,11 @@ export default function Next({
             <img src={rocket} alt="" />
           )}
           <figcaption>
-            <div className="name">
+            <div className="next-name">
               <div>
-                <h2>
+                <h3>
                   <span className="color-details">Name:</span> {nextLaunch.name}
-                </h2>
+                </h3>
               </div>
             </div>
             <p>
@@ -54,20 +54,20 @@ export default function Next({
           </figcaption>
         </figure>
       ) : (
-        <figure className="next">
+        <figure>
           <img src={rocket} alt="" />
 
           <figcaption>
             <div className="soon">
               <div>
-                <h2>
+                <h3>
                   <span className="color-details">Will be updated soon!</span>
-                </h2>
+                </h3>
               </div>
             </div>
           </figcaption>
         </figure>
       )}
-    </>
+    </div>
   );
 }

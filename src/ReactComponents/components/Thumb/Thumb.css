@@ -72,7 +72,7 @@
 .launch-crew {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.3);
-  padding: 0 0.5rem;
+  padding: 0;
   margin-top: 0.2rem;
   border-radius: 1rem 0;
 }
@@ -81,6 +81,7 @@
   margin: 0;
   font-size: 0.6rem;
   line-height: 0;
+  padding: 0 0.2rem;
 }
 .launch-crew a {
   border: none;

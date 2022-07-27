@@ -1,4 +1,4 @@
-header {
+.header {
   width: 100%;
   max-width: 2000px;
   height: 0;
@@ -7,10 +7,7 @@ header {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+
   background-color: black;
   border-bottom: solid rgba(255, 255, 0, 0.6) 0.3rem;
   z-index: 2;

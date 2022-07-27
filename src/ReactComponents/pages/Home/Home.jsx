@@ -6,17 +6,20 @@ import "./Home.css";
 
 export default function Home() {
   return (
-    <div className="home">
-      <div className="loader">
-        <div className="rocket">
-          <i className="fa fa-rocket" aria-hidden="true"></i>{" "}
+    <>
+      <Header />
+      <div className="home">
+        <div className="loader">
+          <div className="rocket">
+            <i className="fa fa-rocket" aria-hidden="true"></i>{" "}
+          </div>
+        </div>
+
+        <div className="main">
+          <Gallery />
+          <Aside />
         </div>
       </div>
-      <Header />
-      <div className="main">
-        <Gallery />
-        <Aside />
-      </div>
-    </div>
+    </>
   );
 }

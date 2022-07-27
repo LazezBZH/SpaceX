@@ -1,24 +1,20 @@
 .aside {
   width: 20%;
-
-  margin-top: 20rem;
-  margin-right: 1rem;
+  margin: auto;
+  margin-top: 6rem;
+  padding: 2rem;
 }
 .aside-inside {
+  width: 90%;
   height: auto;
   margin: auto;
   background-color: rgb(36, 36, 36);
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 .aside h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-.separate {
-  width: 90%;
-  margin: 4rem auto auto auto;
-  height: 0.3rem;
-  background-color: rgba(255, 255, 0, 0.6);
-}
+
 .white-content .aside-inside {
   background-color: rgba(178, 177, 177, 0.5);
 }
