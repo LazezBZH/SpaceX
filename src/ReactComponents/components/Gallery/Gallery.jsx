@@ -9,7 +9,7 @@ import "./Gallery.css";
 export default function Gallery() {
   const [launches, setLaunches] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState();
-  console.log("launches", launches[80]);
+
   useEffect(() => {
     function getLaunches() {
       const data = new GetAll();
@@ -23,26 +23,28 @@ export default function Gallery() {
     setSelectedCategory(event.target.value);
   }
   function getFilteredList() {
-    if (!selectedCategory) {
-      return launches;
-    } else if (selectedCategory === "true") {
-      return launches.filter((item) => item.upcoming);
-    } else if (selectedCategory === "false") {
-      return launches.filter((item) => !item.upcoming);
-    } else if (selectedCategory === "success") {
-      return launches.filter((item) => item.success);
-    } else if (selectedCategory === "pictures") {
-      return launches.filter((item) => item.links.flickr.original[0]);
-    } else if (selectedCategory === "details") {
-      return launches.filter((item) => item.details);
-    } else if (selectedCategory === "links") {
-      return launches.filter(
-        (item) => item.links.article || item.links.wikipedia
-      );
-    } else if (selectedCategory === "crew") {
-      return launches.filter((item) => item.crew.length > 0);
+    switch (selectedCategory) {
+      case "upcoming":
+        return launches.filter((item) => item.upcoming);
+      case "passed":
+        return launches.filter((item) => !item.upcoming);
+      case "success":
+        return launches.filter((item) => item.success);
+      case "failed":
+        return launches.filter((item) => !item.upcoming && !item.success);
+      case "pictures":
+        return launches.filter((item) => item.links.flickr.original[0]);
+      case "details":
+        return launches.filter((item) => item.details);
+      case "links":
+        return launches.filter(
+          (item) => item.links.article || item.links.wikipedia
+        );
+      case "crew":
+        return launches.filter((item) => item.crew.length > 0);
+      default:
+        return launches;
     }
-    return launches.filter((item) => !item.upcoming && !item.success);
   }
   let filteredList = useMemo(getFilteredList, [selectedCategory, launches]);
   return (
@@ -56,8 +58,8 @@ export default function Gallery() {
           onChange={handleCategoryChange}
         >
           <option value="">All</option>
-          <option value="true">Incomming</option>
-          <option value="false">Passed</option>
+          <option value="upcoming">Upcoming</option>
+          <option value="passed">Passed</option>
           <option value="success">Success</option>
           <option value="failed">Failed</option>
           <option value="pictures">With picture</option>

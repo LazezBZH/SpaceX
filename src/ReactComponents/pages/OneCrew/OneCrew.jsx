@@ -31,9 +31,6 @@ export default function OneCrew() {
     <div className="one-crew">
       <Header />
       <div className="one-crew-main">
-        <Link className="back" to={`/`}>
-          Back ⤶
-        </Link>
         <figure className="one-crew-thumb">
           {oneCrew.image ? (
             <img

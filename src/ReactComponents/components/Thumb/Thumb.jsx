@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 export default function Thumb({ launch }) {
   const date = new Date(launch.date_utc);
 
+  let today = new Date();
+
   const day = date.getDate();
   const month = date.getMonth() + 1;
   const year = date.getFullYear();
@@ -40,9 +42,7 @@ export default function Thumb({ launch }) {
               launch.crew.map((cre) => {
                 return (
                   <Link
-                    onClick={() => {
-                      window.scrollTo({ top: 0, left: 0 });
-                    }}
+                    target="_blank"
                     key={cre.crew}
                     to={`/onecrew/${cre.crew}`}
                   >
@@ -54,11 +54,17 @@ export default function Thumb({ launch }) {
               <></>
             )}
           </div>
-          <div className="incomming">
-            {launch.upcoming === false ? (
-              <p>Passed</p>
+          <div className="upcoming">
+            {launch.upcoming === true ? (
+              today - date > 0 ? (
+                <div className="filter-figure">
+                  <p className="climb">Will be updated soon!</p>
+                </div>
+              ) : (
+                <p className="clign">Upcoming</p>
+              )
             ) : (
-              <p className="clign">Incomming</p>
+              <p>Passed</p>
             )}
           </div>
         </figcaption>
@@ -110,10 +116,19 @@ export default function Thumb({ launch }) {
               )}
             </div>
           </div>
-          <div>
+          <div className="launch-link">
             {launch.links.article ? (
               <a href={launch.links.article} target="_blank" rel="noreferrer">
                 Link to learn more about »»»
+              </a>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="launch-link">
+            {launch.links.wikipedia ? (
+              <a href={launch.links.wikipedia} target="_blank" rel="noreferrer">
+                Wikipedia »»»
               </a>
             ) : (
               <></>
@@ -124,3 +139,17 @@ export default function Thumb({ launch }) {
     </>
   );
 }
+
+// <div className="filter-figure">
+//   {launch.upcoming === true ? (
+//     <div>
+//       {today - date > 0 ? (
+
+//       ) : (
+//         <p className="empty"></p>
+//       )}
+//     </div>
+//   ) : (
+//     <p className="empty"></p>
+//   )}
+// </div>;

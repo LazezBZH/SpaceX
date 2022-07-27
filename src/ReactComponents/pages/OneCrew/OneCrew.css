@@ -20,7 +20,7 @@
 .one-crew-main {
   width: 80%;
   margin: auto;
-
+  margin-top: 2rem;
   padding-top: 3rem;
   position: relative;
 }
@@ -68,12 +68,6 @@
 .one-crew-color-details {
   color: rgb(10, 234, 234);
   font-weight: bold;
-}
-.back {
-  color: white;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bolder;
 }
 
 .white-content .one-crew-thumb {
