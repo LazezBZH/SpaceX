@@ -14,9 +14,9 @@ const Header = () => {
           </a>
         </button>
       </div>
-      <div>
+      <div className="header-btn">
         <ToggleButton />
-        <div className="header-btn">
+        <div className="header-btn header-btns">
           <div className="link">
             <Link
               to="/"

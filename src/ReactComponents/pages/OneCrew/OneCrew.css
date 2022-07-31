@@ -121,24 +121,25 @@
 }
 @media (max-width: 1000px) {
   .one-crew .header {
-    height: 32rem;
+    height: 25rem;
     display: block;
   }
   .one-crew .header-btn {
+    width: 80%;
     display: flex;
+    margin: auto;
+    margin-top: 1rem;
   }
   .one-crew .link {
     width: 30%;
-    margin: 0 auto;
+    height: 50%;
+    margin: auto;
   }
   .one-crew figure {
     display: block;
   }
 }
 @media (max-width: 690px) {
-  .one-crew .header {
-    height: 36rem;
-  }
   .one-crew-thumb img {
     width: 15rem;
   }
@@ -151,9 +152,6 @@
   }
 }
 @media (max-width: 540px) {
-  .one-crew .header {
-    height: 40rem;
-  }
   .one-crew-thumb figcaption img {
     display: none;
   }
@@ -166,19 +164,35 @@
   .one-crew figcaption {
     padding-bottom: 5rem;
   }
+  .one-crew .header-btn {
+    width: 100%;
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 420px) {
-  .one-crew .header {
-    height: 48rem;
-  }
   .link-wiki a {
     padding: 0;
     font-size: 0.6rem;
+  }
+}
+@media (max-width: 390px) {
+  .one-crew .header {
+    height: 28rem;
+    display: block;
   }
 }
 @media (max-width: 365px) {
   .link-wiki a {
     padding: 0;
     font-size: 0.4rem;
+  }
+  .one-crew .header-btns {
+    display: block;
+    margin-top: 0;
+  }
+  .one-crew .link {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 0.5rem;
   }
 }
