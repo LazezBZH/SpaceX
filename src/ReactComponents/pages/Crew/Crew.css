@@ -1,7 +1,6 @@
 .crew-home {
   background-color: black;
   color: white;
-
   max-width: 2000px;
   margin: auto;
 }
@@ -22,6 +21,7 @@
   animation-delay: 2s;
   z-index: 99;
 }
+
 .crew-rocket {
   position: absolute;
   top: 0;
@@ -33,9 +33,9 @@
   line-height: 200px;
   border-radius: 50%;
   box-shadow: inset 0 0 55px rgba(255, 255, 255, 0.1);
-
   animation: launchcrew 2500ms linear 1;
 }
+
 .crew-rocket:before {
   content: "";
   position: absolute;
@@ -50,6 +50,7 @@
   transform: rotate(45deg);
   animation: firecrew 2500ms linear 1;
 }
+
 @keyframes launchcrew {
   0% {
     transform: translate(-10%, -10%);
@@ -67,6 +68,7 @@
     transform: translate(100vw, -10%);
   }
 }
+
 @keyframes firecrew {
   0% {
     background-color: orangered;
@@ -87,6 +89,7 @@
     transform: rotate(45deg) scale(1);
   }
 }
+
 @keyframes invisiblecrew {
   0% {
     opacity: 1;
@@ -97,6 +100,7 @@
     height: 0%;
   }
 }
+
 .white-content .crew-home {
   background-color: rgba(149, 147, 147, 0.229);
   background-color: white;

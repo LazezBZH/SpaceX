@@ -10,6 +10,7 @@
   background-size: 150%;
   background-position: 35%;
 }
+
 .one-crew .header {
   animation: none;
   width: 100%;
@@ -17,10 +18,12 @@
   height: 15rem;
   opacity: 1;
 }
+
 .one-crew-main {
   width: 80%;
   margin: auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding-top: 3rem;
   position: relative;
 }
@@ -43,12 +46,14 @@
 .one-crew figure {
   display: flex;
 }
+
 .one-crew-thumb figcaption {
   text-align: left;
   padding: 4rem;
   line-height: 3rem;
   font-size: 2rem;
 }
+
 .one-crew-thumb figcaption img {
   position: absolute;
   top: 0;
@@ -57,18 +62,22 @@
 .one-crew-name {
   width: 90%;
 }
+
 .one-crew-thumb a {
   color: rgb(10, 234, 234);
   text-decoration: none;
   font-weight: bold;
   border: solid 2px rgb(10, 234, 234);
   padding: 0 0.5rem;
+  font-size: 1rem;
 }
 
 .one-crew-color-details {
   color: rgb(10, 234, 234);
   font-weight: bold;
 }
+
+/* white-content */
 
 .white-content .one-crew-thumb {
   background-color: white;
@@ -78,12 +87,98 @@
 .white-content .one-crew-color-details {
   color: rgb(59, 59, 219);
 }
+
 .white-content .one-crew-thumb a {
   color: rgb(59, 59, 219);
   border: solid 2px rgb(59, 59, 219);
 }
+
 .white-content .one-crew {
   background-color: rgba(149, 147, 147, 0.229);
   background-color: white;
   color: black;
+}
+
+/* responsive */
+@media (max-width: 1440px) {
+  .one-crew-thumb img {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 1260px) {
+  .one-crew .header {
+    height: 22rem;
+  }
+}
+@media (max-width: 1105px) {
+  .one-crew {
+    height: auto;
+  }
+  .one-crew-main {
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .one-crew .header {
+    height: 32rem;
+    display: block;
+  }
+  .one-crew .header-btn {
+    display: flex;
+  }
+  .one-crew .link {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .one-crew figure {
+    display: block;
+  }
+}
+@media (max-width: 690px) {
+  .one-crew .header {
+    height: 36rem;
+  }
+  .one-crew-thumb img {
+    width: 15rem;
+  }
+  .one-crew-thumb figcaption img {
+    width: 10rem;
+  }
+  .one-crew figure {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 540px) {
+  .one-crew .header {
+    height: 40rem;
+  }
+  .one-crew-thumb figcaption img {
+    display: none;
+  }
+  .one-crew figcaption {
+    font-size: 1.5rem;
+  }
+  .link-wiki a {
+    font-size: 0.6rem;
+  }
+  .one-crew figcaption {
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 420px) {
+  .one-crew .header {
+    height: 48rem;
+  }
+  .link-wiki a {
+    padding: 0;
+    font-size: 0.6rem;
+  }
+}
+@media (max-width: 365px) {
+  .link-wiki a {
+    padding: 0;
+    font-size: 0.4rem;
+  }
 }

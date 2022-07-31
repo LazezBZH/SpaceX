@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import GetAll from "../../../utils/getApi";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import nopict from "../../../assets/no-photo.png";
 import spacex from "../../../assets/spacex-logo.png";
 
@@ -63,7 +63,7 @@ export default function OneCrew() {
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="link-wiki">
                 {oneCrew.wikipedia ? (
                   <a href={oneCrew.wikipedia} target="_blank" rel="noreferrer">
                     Link to learn more about »»»
@@ -74,7 +74,6 @@ export default function OneCrew() {
               </div>
             </div>
             <div>
-              {" "}
               <img src={spacex} alt="spacex" />
             </div>
           </figcaption>
