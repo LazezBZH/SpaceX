@@ -97,8 +97,19 @@
     width: 0%;
   }
 }
+
+/* white-content */
+
 .white-content .home {
   background-color: rgba(149, 147, 147, 0.229);
   background-color: white;
   color: black;
+}
+
+/* responsive */
+
+@media (max-width: 750px) {
+  .main {
+    flex-direction: column-reverse;
+  }
 }

@@ -152,6 +152,8 @@
   background-color: rgb(231, 230, 230);
 }
 
+/* white-content */
+
 .white-content .thumb {
   background-color: white;
   border: solid 2px rgba(149, 147, 147, 0.5);
@@ -173,4 +175,75 @@
 }
 .white-content .climb {
   background-color: rgba(1, 50, 88, 0.3);
+}
+
+/* responsive */
+
+@media (max-width: 1440px) {
+  .thumb figcaption {
+    width: 23rem;
+  }
+  .thumb img {
+    width: 18rem;
+    height: 15rem;
+  }
+}
+@media (max-width: 1250px) {
+  .thumb figcaption {
+    width: 18rem;
+  }
+  .thumb img {
+    width: 16rem;
+    height: 13rem;
+  }
+  .name {
+    width: 17rem;
+  }
+}
+@media (max-width: 1050px) {
+  .thumb figcaption {
+    width: 15rem;
+  }
+  .thumb img {
+    width: 14rem;
+    height: 12rem;
+  }
+  .name {
+    width: 14.5rem;
+  }
+}
+@media (max-width: 930px) {
+  .thumb figcaption {
+    width: 13rem;
+  }
+  .thumb img {
+    width: 12rem;
+    height: 10rem;
+  }
+  .name {
+    width: 12.5rem;
+  }
+}
+@media (max-width: 850px) {
+  .thumb {
+    width: 60%;
+  }
+  .thumb figcaption {
+    width: 100%;
+  }
+  .thumb img {
+    width: 12rem;
+    height: 10rem;
+  }
+  .name {
+    width: 94%;
+  }
+  .thumb h2 {
+    width: 98%;
+  }
+}
+@media (max-width: 750px) {
+  /* .thumb {
+    width: 50%;
+  } */
 }

@@ -52,6 +52,8 @@
   font-weight: bold;
 }
 
+/* white-content */
+
 .white-content .next {
   background-color: rgba(1, 50, 88, 0.2);
   border: solid 2px rgba(149, 147, 147, 0.5);
@@ -68,3 +70,16 @@
 .white-content .next h2 {
   color: black;
 }
+
+/* responsive */
+
+@media (max-width: 1440px) {
+  .next {
+    width: 100%;
+  }
+}
+/* @media (max-width: 850px) {
+  .aside {
+    width: 40%;
+  }
+} */
