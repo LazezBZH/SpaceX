@@ -58,3 +58,36 @@
   color: rgb(59, 59, 219);
   border: solid 2px rgb(59, 59, 219);
 }
+
+/* responsive */
+
+@media (max-width: 840px) {
+  .crew-thumb {
+    width: 30rem;
+    margin: 1rem auto;
+  }
+  .crew-thumb img {
+    width: auto;
+  }
+  .crew-thumb figcaption {
+    width: auto;
+  }
+}
+@media (max-width: 600px) {
+  .crew-thumb {
+    width: 25rem;
+  }
+}
+@media (max-width: 500px) {
+  .crew-thumb {
+    width: 20rem;
+  }
+  .crew-thumb img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .crew-thumb {
+    width: 18rem;
+  }
+}

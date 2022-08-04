@@ -10,3 +10,11 @@
   bottom: 0;
   right: 2%;
 }
+
+/* responsive */
+
+@media (max-width: 840px) {
+  .crew-gallery {
+    display: block;
+  }
+}
