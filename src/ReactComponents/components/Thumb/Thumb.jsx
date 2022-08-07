@@ -46,7 +46,7 @@ export default function Thumb({ launch }) {
                     key={cre.crew}
                     to={`/onecrew/${cre.crew}`}
                   >
-                    <p>See: {cre.role} </p>
+                    <div className="launch-crew_p">See: {cre.role} </div>
                   </Link>
                 );
               })
